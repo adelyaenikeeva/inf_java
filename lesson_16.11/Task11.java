@@ -12,9 +12,11 @@ public class Task11 {
         int[] array = new int[n];
         int multiply = 1;
 
-        //      вводим элементы массива и сразу проверяем условие
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < n; i++) {
             if (array[i] % 7 == 0) {
                 multiply *= array[i];
             }

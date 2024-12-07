@@ -18,6 +18,9 @@ public class Task14 {
 
         for (int j = 0; j < n; j++) {
             array[j] = scanner.nextDouble();
+        }
+
+        for (int j = 0; j < n; j++) {
             // исключаем из суммы a_i элемент
             if (j != i) {
                 sum += array[j];

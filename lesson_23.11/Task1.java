@@ -25,6 +25,9 @@ public class Task1 {
         System.out.println("Введите элементы массива:");
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < n; i++) {
 //          >=, чтобы найти индекс именно последнего макс элемента
             if (array[i] >= array[maxIndex]) {
                 maxIndex = i;

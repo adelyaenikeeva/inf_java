@@ -13,9 +13,11 @@ public class Task10 {
         double[] array = new double[n];
         double sum = 0;
 
-        //      вводим элементы массива и сразу проверяем условие
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextDouble();
+        }
+
+        for (int i = 0; i < n; i++) {
             if (array[i] > 0) {
                 sum += array[i];
             }

@@ -59,6 +59,20 @@ public class Task3 {
             }
         }
 
+        for (int i = 0; i < n - 1; i++) {
+            int sum = array[i] + array[i + 1];
+
+            if (sum > maxSum) {
+                maxSum = sum;
+                maxIndex1 = i;
+            }
+
+            if (sum <= minSum) {
+                minSum = sum;
+                minIndex1 = i;
+            }
+        }
+
         System.out.println("Максимальная сумма двух соседних чисел: " + maxSum);
         System.out.println("Минимальная сумма двух соседних чисел: " + minSum);
         System.out.println("Порядковые номера соседних чисел с максимальной суммой: [" + maxIndex1 + ", " + (maxIndex1 + 1) + "]");

@@ -21,11 +21,14 @@ public class Task12 {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 matrix[i][j] = scanner.nextDouble();
+            }
+        }
 
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
                 double absValue = Math.abs(matrix[i][j]);
                 if (absValue > maxAbsValue) {
                     maxAbsValue = absValue;
-
                 }
             }
         }

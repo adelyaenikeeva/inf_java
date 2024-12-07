@@ -18,9 +18,11 @@ public class Task9 {
         int count = 0;
 
         System.out.println("Введите элементы массива");
-//      вводим элементы массива и сразу проверяем условие
         for (int i = 0; i < length; i++){
             array[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < length; i++){
             if (array[i] % 5 == 0 && array[i] % 7 != 0){
                 sum += array[i];
                 count++;
