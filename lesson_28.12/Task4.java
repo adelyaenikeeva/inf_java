@@ -22,13 +22,13 @@ public class Task4 {
                 "abc"
         };
 
-        Pattern pattern = Pattern.compile(regex);
-
-        for (String test : testStrings) {
-            Matcher matcher = pattern.matcher(test);
-
-            while (matcher.find()) {
-                System.out.printf("Строка соответствует целому числу %s\n", matcher.group());
+        for (String s : testStrings) {
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher = pattern.matcher(s);
+            if (matcher.matches()) {
+                System.out.println(s + " соответствует регулярному выражению");
+            } else {
+                System.out.println(s + " не соответствует регулярному выражению");
             }
         }
     }
